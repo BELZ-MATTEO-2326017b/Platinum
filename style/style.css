@@ -17,7 +17,7 @@
 html{height:100%;}
 
 body{
-	background: url(../img/fond_ecran.jpg) fixed center no-repeat;
+	background: url(../img/image_fond.jpg) fixed center no-repeat;
   background-size: cover;
 }
 img {
