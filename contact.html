@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Eddy Merckx - Contact</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="BELZ Luca Aymeric FRANCOIS P21 Eddy Merckx">
+	<meta name="author" lang="fr" content="BELZ Luca et Aymeric FRANCOIS">
+	<meta name="Description" content="Ce site est un site vitrine sur Eddy Merckx. Il a été produit dans le cadre d'un projet MM01 de l'Université de Technologie de Troyes par BELZ Luca et Aymeric FRANCOIS en P21 sous la tutelle de Nicolas THOREL." >
+	<link rel="stylesheet" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="img/velo_16.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/velo_32.png" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<h1>Eddy Merckx</h1>
+		<!--Partie menu-->
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Accueil</a>
+			<a href="palmares.html">Palmarès</a>
+			<a href="biographie.html">Biographie</a>
+			  <a href="equipes.html">Équipes</a>
+			  <div class="dropdown">
+					<button class="dropbtn">Cyclisme Pro<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					  <a href="monuments.html">Les monuments</a>
+					  <a href="grand_tour.html">Grand tour</a>
+				</div>
+			</div> 
+			  <a href="galerie.html">Galerie</a>
+			  <a href="quiz.html">Quiz</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	  </div>
+		</header>
+		<!--Fin partie menu-->
+		<section>
+		<br>
+		<h1>Contact</h1>
+		<br>
+		<div class="container2">
+		<form action="http://mm01.thorelnicolas.fr/p21/belzluca/projet/page/luca.belz@utt.fr" method="post" accept-charset="utf-8">
+
+				<legend>Vos suggestions</legend>
+				<br>
+				<label for="nom">Nom: </label>
+				<br>
+			
+				<input type="text" size="40" maxlenght="25" id="nom" name="nom" placeholder="NOM" required>
+				<br><br>
+				<label for="prénom"> Prénom: </label>
+				<br>
+				
+				<input type="text" size="40" maxlenght="25" id="prenom" name="prenom" placeholder="Prénom" required>
+				<br><br>
+
+				<label for="mail">Adresse e-mail :</label>
+				<br>
+				
+				<input type="email" id="mail" name="mail" placeholder="prénom.nom@utt.fr" required>
+				<br><br>
+
+
+				<label for="statut">Vous êtes ?</label>
+				<br>
+				
+				<select name="statut" id="statut" required>
+					<option value="etudiant">Étudiant</option>
+					<option value="professeur">Professeur</option>
+					<option value="autre">Autre</option>
+				</select>
+				<br><br>
+
+				<label for="comment">Contenu de votre message :</label>
+				<br>
+				
+			    <textarea type="text" id="comment" name="comment" rows="4" cols="50" required></textarea>
+			    <br>
+			    <br>
+			    
+				<input type="submit" value="Envoyer"><br>
+			</fieldset>
+		</form>
+		</div>
+		</section>
+		<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<footer>
+	<div class="container">
+		 <div class="center">
+			<p>MM01-P21</p>
+			<p>CHEF DE PROJET : BELZ LUCA</p>
+			<p><a href = "mailto:luca.belz@utt.fr">CONTACT</a> | <a href="credits.html">CREDITS</a></p>
+		</div>
+	  </div>
+</footer>
+	</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Eddy Merckx - Équipes</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="BELZ Luca Aymeric FRANCOIS P21 Eddy Merckx">
+	<meta name="author" lang="fr" content="BELZ Luca et Aymeric FRANCOIS">
+	<meta name="Description" content="Ce site est un site vitrine sur Eddy Merckx. Il a été produit dans le cadre d'un projet MM01 de l'Université de Technologie de Troyes par BELZ Luca et Aymeric FRANCOIS en P21 sous la tutelle de Nicolas THOREL." >
+	<link rel="stylesheet" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="img/velo_16.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/velo_32.png" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			@media screen and (max-width: 425px){
+				.container20{
+  					float: left;
+ 					width: 30%;
+  					padding-right: 10px;
+  					padding-left: 10px;
+				}
+				.container80{
+  					float: left;
+  					width: 70%;
+  					padding-right: 10px;
+  					padding-left: 10px;
+				}
+				.container20 img{
+  					width: 100%;
+				}
+				.container{
+  					width: 100%;
+					overflow: auto;
+					padding: 5px 25px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>Eddy Merckx</h1>
+		<!--Partie menu-->
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Accueil</a>
+			<a href="palmares.html">Palmarès</a>
+			<a href="biographie.html">Biographie</a>
+			  <a href="equipes.html">Équipes</a>
+			  <div class="dropdown">
+					<button class="dropbtn">Cyclisme Pro<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					  <a href="monuments.html">Les monuments</a>
+					  <a href="grand_tour.html">Grand tour</a>
+				</div>
+			</div> 
+			  <a href="galerie.html">Galerie</a>
+			  <a href="quiz.html">Quiz</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	  </div>
+	  <!--Fin partie menu-->
+		</header>
+		<section>
+			<br>
+			<h2>Equipes</h2>
+			<br>
+			<div class="container">
+				<div class="container20">
+			<img src="img/solo.jpg" alt="Solo-Superia" title="Solo-Superia">
+				</div>
+				<div class="container80">
+			<h3>Solo-Superia</h3>
+			<br>
+			<ul>
+				<li>29/04/1965 - 1965</li>
+			</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="container20">
+			<img src="img/peugeot.jpg" alt="Peugeot BP Michelin" title="Peugeot BP Michelin">
+				</div>
+				<div class="container80">
+			<h3>Peugeot BP Michelin</h3>
+			<br>
+			<ul>
+				<li>1966 - 1967</li>
+			</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="container20">
+			<img src="img/faema.jpg" alt="Faema" title="Faema">
+				</div>
+				<div class="container80">
+			<h3>Faema</h3>
+			<br>
+			<ul>
+				<li>1968 - 1969</li>
+			</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="container20">
+			<img src="img/faemino.jpg" alt="Faemino" title="Faemino">
+				</div>
+				<div class="container80">
+			<h3>Faemino</h3>
+			<br>
+			<ul>
+				<li>1970</li>
+			</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="container20">
+			<img src="img/molteni.jpg" alt="Molteni" title="Molteni">
+				</div>
+				<div class="container80">
+			<h3>Molteni</h3>
+			<br>
+			<ul>
+				<li>1971 - 1976</li>
+			</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="container20">
+			<img src="img/fiat.jpg" alt="Fiat" title="Fiat">
+				</div>
+				<div class="container80">
+			<h3>Fiat</h3>
+			<br>
+			<ul>
+				<li>1977</li>
+			</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="container20">
+			<img src="img/c&a.jpg" alt="C&A" title="C&A">
+				</div>
+				<div class="container80">
+			<h3>C&A</h3>
+			<br>
+			<ul>
+				<li>1978 - 19/03/1978</li>
+			</ul>
+				</div>
+			</div>
+
+		</section>
+		<!-- Partie Javascript-->
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "topnav";
+		  }
+		}
+		</script>
+		<!-- Partie basse-->
+		<footer>
+			<div class="container">
+ 				<div class="center">
+    				<p>MM01-P21</p>
+					<p>CHEF DE PROJET : BELZ LUCA</p>
+					<p><a href = "mailto:luca.belz@utt.fr">CONTACT</a> | <a href="credits.html">CREDITS</a></p>
+  				</div>
+  			</div>
+		</footer>
+	</body>
+</html>

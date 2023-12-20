@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Eddy Merckx - Quiz</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="BELZ Luca Aymeric FRANCOIS P21 Eddy Merckx">
+	<meta name="author" lang="fr" content="BELZ Luca et Aymeric FRANCOIS">
+	<meta name="Description" content="Ce site est un site vitrine sur Eddy Merckx. Il a été produit dans le cadre d'un projet MM01 de l'Université de Technologie de Troyes par BELZ Luca et Aymeric FRANCOIS en P21 sous la tutelle de Nicolas THOREL." >
+	<link rel="stylesheet" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="img/velo_16.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/velo_32.png" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+		<style type="text/css">
+			label {
+			display: block;
+			}
+
+			input {
+			width: 30px;
+			margin-left: 20px;
+			}
+
+			h2 {
+			clear: both;
+			padding-top: 20px;
+			}
+
+			button {
+			color: black;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			background-color: white;
+			border: 0.2em solid #F6BE25;
+			}
+			.button:hover {
+			background-color: #F6BE25;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Eddy Merckx</h1>
+		<!--Partie menu-->
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Accueil</a>
+			<a href="palmares.html">Palmarès</a>
+			<a href="biographie.html">Biographie</a>
+			  <a href="equipes.html">Équipes</a>
+			  <div class="dropdown">
+					<button class="dropbtn">Cyclisme Pro<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					  <a href="monuments.html">Les monuments</a>
+					  <a href="grand_tour.html">Grand tour</a>
+				</div>
+			</div> 
+			  <a href="galerie.html">Galerie</a>
+			  <a href="quiz.html">Quiz</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	  </div>
+		</header>
+		<!-- Fin partie menu-->
+		<section>
+		<div class="main">
+		<h2>Quiz</h2>
+		<br>
+		<form id="form1">
+
+			<h3>Quelle a été la première équipe d'Eddy Merckx ?</h3>
+			<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Faemino</label>
+			<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Molteni</label>
+			<label for="var_info"><input type="radio" name="variable" value="1" id="var_info" />Solo-Superia</label>
+			<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Peugeot BP Michelin</label>
+
+
+			<h3>Combien de fois a-t-il gagné le Tour de France ?</h3>
+			<label for="sub_string"><input type="radio" name="sub" value="0" id="sub_string"/>1</label>
+			<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>3</label>
+			<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />4</label>
+			<label for="sub_condition"><input type="radio" name="sub" value="1" id="sub_condition" />5</label>
+
+
+			<h3>Combien de fois a-t-il gagné la Vuelta ?</h3>
+			<label for="cat_string"><input type="radio" name="con" value="1" id="cat_string" />1</label>
+			<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />3</label>
+			<label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />4</label>
+			<label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />5</label>
+
+
+			<h3>Combien de fois a-t-il gagné il Giro ?</h3>
+			<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />1</label>
+			<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />3</label>
+			<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />4</label>
+			<label for="if_condition"><input type="radio" name="ifstate"  value="1" id="if_condition" />5</label>
+			<br>
+			<div class="container2">
+			<button class="button" type="submit" value="Submit">Valider</button>
+			</div>
+		</form>
+		<br>
+		<p style="text-align: center;">Note : <span id="grade"></span> /4</p>
+		<p id="grade2"></p>
+		<br>
+		</div>
+		<!-- Partie Javascript-->
+		<script>
+		document.getElementById("form1").onsubmit=function() {
+		       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+			   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+			   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+			   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+			   
+			   
+			   
+			   result = variable + sub + con + ifstate;
+			   
+			document.getElementById("grade").innerHTML = result;
+			if (result == 0) {result2 = "Je pense que tu n'as pas révisé.<br /><img src='none.jpg' width='300' />"};
+		    if (result == 25) {result2 = "Tu as besoin de plus de temps.<br /><img src='poor.jpg' width='300' />"};
+		    if (result == 50) {result2 = "Je pense que tu peux faire mieux. Essaie encore !<br /><img src='avg.jpg' width='300' />"};
+		    if (result == 75) {result2 = "Presque ! Essaie encore. <br /><img src='above.jpg' width='300' />"};
+		    if (result == 100) {result2 = "Très bon résultat!<br /><img src='excellent.jpg' width='300' />"};
+			   
+
+
+		return false; // required to not refresh the page; just leave this here
+		} //this ends the submit function
+
+		</script>
+				</section>
+				<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "topnav";
+		  }
+		}
+		</script>
+		<!-- Partie basse-->
+		<footer>
+			<div class="container">
+ 				<div class="center">
+    				<p>MM01-P21</p>
+					<p>CHEF DE PROJET : BELZ LUCA</p>
+					<p><a href = "mailto:luca.belz@utt.fr">CONTACT</a> | <a href="credits.html">CREDITS</a></p>
+  				</div>
+  			</div>
+		</footer>
+	</body>
+
+</html>
