@@ -22,7 +22,7 @@ body{
 }
 img {
   border-radius: 5px;
-  border: solid  #F6BE25 0.2em;
+  border: solid  #61ECFF 0.2em;
 }
 section {
   width: 80%;
@@ -37,7 +37,7 @@ section ul{
 h1{
   font-family: 'LeagueSpartan', sans-serif;
   font-size: 70px;
-  color: #000000;
+  color: #61ECFF;
   margin-left: 15px;
 }
 
@@ -57,7 +57,7 @@ h3{
 
 hr{
 	margin: auto;
-	background-color: #F6BE25;
+	background-color: #61ECFF;
 	width: 80%;
 	height: 7px;
 	border-radius: 7px;
@@ -80,7 +80,7 @@ section ul{
 /*partie haute*/
 
 header {
-	background-color: #F6BE25;
+	background-color: #010101;
 	background-size: cover;
 	text-align: center;
   max-width: 1290px;
@@ -94,7 +94,7 @@ header img{
 /*partie nav*/
 .topnav {
   overflow: hidden;
-  background-color: #9B9B9B;
+  background-color: #010101;
   border: green 2px;
   width: 80%;
   margin: auto;
@@ -131,14 +131,14 @@ header img{
   outline: none;
   color: white;
   padding: 14px 16px;
-  background-color:#9B9B9B ;
+  background-color:#010101 ;
   margin: 0;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #9B9B9B;
+  background-color: #010101;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -155,13 +155,13 @@ header img{
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color:#9B9B9B ;
-  color: #F6BE25;
+  background-color:#010101 ;
+  color: #61ECFF;
 }
 
 .dropdown-content a:hover {
   background-color: #9B9B9B;
-  color: #F6BE25;
+  color: #61ECFF;
 }
 
 .dropdown:hover .dropdown-content {
@@ -171,7 +171,7 @@ header img{
 /*partie basse*/
 footer{
 	background-size: cover;
-	background-color: #9B9B9B;
+	background-color: #393939;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
@@ -268,7 +268,7 @@ table {
 input[type=text], select, textarea,input[type=number],input[type=email]{
   width: 100%;
   padding: 12px;
-  border: 0.2em solid #F6BE25;
+  border: 0.2em solid #61ECFF;
   border-radius: 5px; 
   margin: 6px 0px 16px 0px;
   background-color: white;
@@ -283,12 +283,12 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   background-color: white;
-  border: 0.2em solid #F6BE25;
+  border: 0.2em solid #61ECFF;
   margin-left: 5px;
 }
 
 input[type=submit]:hover {
-  background-color: #F6BE25;
+  background-color: #61ECFF;
   color: white;
   transition: 0.3s ease-out all;
 }
@@ -335,7 +335,7 @@ input[type=submit]:hover {
 }
 .topnav {
   overflow: hidden;
-  background-color: #F6BE25;
+  background-color: #61ECFF;
   border: green 2px;
   width: 100%;
   margin: auto;
@@ -383,7 +383,7 @@ input[type=submit]:hover {
   }
   .topnav {
     overflow: hidden;
-    background-color: #F6BE25;
+    background-color: #61ECFF;
     border: green 2px;
     width: 100%;
     margin: auto;
