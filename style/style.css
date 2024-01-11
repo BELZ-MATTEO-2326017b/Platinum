@@ -16,10 +16,13 @@
 
 html{height:100%;}
 
+/*
 body{
 	background: url(../img/image_fond.jpg) fixed center no-repeat;
   background-size: cover;
 }
+*/
+
 img {
   border-radius: 5px;
   border: solid  #61ECFF 0.2em;
@@ -160,7 +163,7 @@ header img{
 }
 
 .dropdown-content a:hover {
-  background-color: #9B9B9B;
+  background-color: #010101;
   color: #61ECFF;
 }
 
@@ -335,7 +338,7 @@ input[type=submit]:hover {
 }
 .topnav {
   overflow: hidden;
-  background-color: #61ECFF;
+  background-color: #010101;
   border: green 2px;
   width: 100%;
   margin: auto;
