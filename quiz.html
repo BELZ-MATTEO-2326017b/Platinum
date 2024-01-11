@@ -10,41 +10,14 @@
 	<meta name="Description" content="Ce site est un site d'une Maison de disque totalement fictive. Il a été produit dans le cadre d'un projet de SAE pour l'IUT Aix-Marseille." >
 	<link rel="stylesheet" href="style/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="img/velo_16.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="img/velo_32.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="img/pr_16.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/pr_32.png" sizes="16x16" />
 	<link href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-		<style type="text/css">
-			label {
-			display: block;
-			}
 
-			input {
-			width: 30px;
-			margin-left: 20px;
-			}
-
-			h2 {
-			clear: both;
-			padding-top: 20px;
-			}
-
-			button {
-			color: black;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			background-color: white;
-			border: 0.2em solid #61ecff;
-			}
-			.button:hover {
-			background-color: #61ecff;
-			}
-		</style>
 	</head>
 	<body>
 		<header>
@@ -52,14 +25,12 @@
 		<!--Partie menu-->
 		<div class="topnav" id="myTopnav">
 			<a href="index.html">Accueil</a>
-			<a href="palmares.html">Palmarès</a>
-			<a href="biographie.html">Biographie</a>
 			  <a href="equipes.html">Nos rappeurs</a>
 			  <div class="dropdown">
-					<button class="dropbtn">Cyclisme Pro<i class="fa fa-caret-down"></i></button>
+				<button class="dropbtn">Infos<i class="fa fa-caret-down"></i></button>
 				<div class="dropdown-content">
-					  <a href="monuments.html">Les monuments</a>
-					  <a href="grand_tour.html">Grand tour</a>
+					  <a href="monuments.html">Extraits audio</a>
+					  <a href="grand_tour.html">Nos partenaires</a>
 				</div>
 			</div> 
 			  <a href="galerie.html">Tournées</a>
@@ -86,8 +57,13 @@
 					<label for="msg">Message:</label>
 					<textarea id="msg" name="user_message"></textarea>
 				</li>
+
+				<li>
+					<label for="date">Réserver:</label>
+					<input class="b" type="datetime-local" placeholder="Date and time" required name="date">
+				</li>
 					<div class="container2"></div>
-					<button class="button" type="submit" value="Submit">Envoyer</button>
+					<a href="confirmation.html" class="myButton" type="submit" value="Submit">Envoyer</a>
 			</ul>
 		</form>
 		</div>
@@ -107,7 +83,6 @@
 		<footer>
 			<div class="container">
  				<div class="center">
-					<p>SAE</p>
 					<p>Fait par : ARSENA, ATROUN, BELZ </p>
 					<p><a href = "mailto:contact.platinumrecord@gmail.com">Nous contacter</a> | <a href="credits.html">Crédits</a></p>
   				</div>
