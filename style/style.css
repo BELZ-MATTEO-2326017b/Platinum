@@ -168,6 +168,31 @@ header img{
   display: block;
 }
 
+/*bouton*/
+
+.myButton {
+	background:linear-gradient(to bottom, #61edff 5%, #00b8c2 100%);
+	background-color:#61edff;
+	border-radius:28px;
+	border:1px solid #a3d1ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #424242;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #00b8c2 5%, #61edff 100%);
+	background-color:#0465c7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 /*partie basse*/
 footer{
 	background-size: cover;
